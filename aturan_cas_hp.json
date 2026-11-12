@@ -1,0 +1,42 @@
+    {
+    "judul": "Sistem Pakar Identifikasi Masalah Pengisian Daya Smartphone",
+    "metode": "Forward Chaining",
+
+    "gejala": [
+        { "kode": "G01", "pertanyaan": "Apakah kabel charger terlihat rusak?"},
+        {"kode": "G02", "pertanyaan": "Apakah adaptor charger tidak berfungsi?"},
+        {"kode": "G03", "pertanyaan": "Apakah smartphone tidak mendeteksi kabel charger?"},
+        {"kode": "G04", "pertanyaan": "Apakah port charger terlihat kotor?" },
+        {"kode": "G05","pertanyaan": "Apakah pengisian daya sering terputus?"},
+        {"kode": "G06","pertanyaan": "Apakah smartphone terasa panas saat diisi daya?"},
+        {"kode": "G07","pertanyaan": "Apakah pengisian daya menjadi lambat?"},
+        {"kode": "G08","pertanyaan": "Apakah persentase baterai tidak bertambah?"},
+        {"kode": "G09","pertanyaan": "Apakah kabel dan adaptor berfungsi normal?"},
+        {"kode": "G10","pertanyaan": "Apakah port charger terlihat bersih?"},
+        {"kode": "G11","pertanyaan": "Apakah smartphone tetap tidak mengisi daya?"}
+    ],
+
+    "aturan": [
+        {"id": "R1","jika": ["G01"],"maka": "K01","jenis": "diagnosis"},
+        {"id": "R2","jika": ["K01", "G05"],"maka": "K01A", "jenis": "fakta_baru"},
+        {"id": "R3","jika": ["G02"],"maka": "K02","jenis": "diagnosis"},
+        {"id": "R4","jika": ["G04", "G05"],"maka": "K03","jenis": "diagnosis"},
+        {"id": "R5","jika": ["G06", "G07"],"maka": "K04","jenis": "diagnosis"},
+        {"id": "R6", "jika": ["G09", "G10", "G03", "G11"],"maka": "K05","jenis": "diagnosis"}
+    ],
+
+    "kesimpulan": {
+        "K01": "Kabel charger bermasalah.",
+        "K01A": "Pengisian daya terganggu akibat kabel charger.",
+        "K02": "Adaptor charger bermasalah.",
+        "K03": "Port pengisian daya kotor atau mengalami gangguan koneksi.",
+        "K04": "Pengisian daya kemungkinan dibatasi karena suhu tinggi.",
+        "K05": "Kemungkinan terdapat masalah pada baterai atau perangkat keras smartphone."
+    },
+
+    "referensi": [
+        {"nama": "Apple Support","url": "https://support.apple.com/en-us/108805"},
+        {"nama": "Samsung Support","url": "https://www.samsung.com/us/support/troubleshooting/"},
+        {"nama": "Google Pixel Help","url": "https://support.google.com/pixelphone/answer/7167687?sjid=17913023043162405875-NC"}
+    ]
+}
