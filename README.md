@@ -56,7 +56,7 @@ Pengetahuan dalam sistem ini disusun berdasarkan informasi panduan resmi mengena
 | No. | Judul Sumber | Penerbit | URL | Tanggal Akses |
 |---|---|---|---|---|
 | 1 | If your iPhone or iPod touch won't charge | Apple Support | https://support.apple.com/en-us/108805 | 12 November 2026 |
-| 2 | Samsung phone or tablet will not charge | Samsung Support | https://www.samsung.com/us/support/troubleshoot/TSG10001462/ | 12 November 2026 |
+| 2 | Samsung phone or tablet will not charge | Samsung Support | https://www.samsung.com/uk/support/mobile-devices/what-to-do-if-your-phone-is-not-charging/ | 12 November 2026 |
 | 3 | Fix a Pixel phone that won't charge or turn on | Google Pixel Help | https://support.google.com/pixelphone/answer/7167687?sjid=17913023043162405875-NC | 12 November 2026 |
 
 ### B. Daftar Gejala
